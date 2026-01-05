@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>میرا پیزا شاپ</title>
+<title>My Pizza & Fast Food Shop</title>
 
 <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background:#f4f4f4;
-    direction: rtl;
+    direction: ltr;
 }
 header {
     background:#ff4500;
@@ -41,7 +41,7 @@ section {
 .menu-item img {
     width:120px;
     height:80px;
-    margin-left:15px;
+    margin-right:15px;
 }
 button, input, select {
     padding:10px;
@@ -75,80 +75,108 @@ footer {
 <body>
 
 <header>
-<h1>🍕 میرا پیزا شاپ</h1>
-<p>مالک: <strong>Muneeb-UR-Rehman</strong></p>
-<p>
-📞 <a href="tel:03244991725" style="color:white;">0324-4991725</a>
-</p>
+<h1>🍕 My Pizza & Fast Food Shop</h1>
+<p>Owner: <strong>Muneeb-UR-Rehman</strong></p>
+<p>📞 <a href="tel:03244991725" style="color:white;">0324-4991725</a></p>
 
-<a class="call-btn" href="tel:03244991725">📞 کال کر کے آرڈر کریں</a>
+<a class="call-btn" href="tel:03244991725">📞 Call to Order</a>
 </header>
 
 <nav>
-<a href="#menu">مینو</a>
-<a href="#order">آرڈر کریں</a>
-<a href="#contact">رابطہ</a>
+<a href="#menu">Menu</a>
+<a href="#order">Order Now</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="menu">
-<h2>📋 ہمارا مینو</h2>
+<h2>📋 Our Menu</h2>
 
+<!-- Pizza Menu -->
 <div class="menu-item">
-<img src="https://via.placeholder.com/120x80">
+<img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="Margherita Pizza">
 <div>
-<h3>مارگریٹا پیزا</h3>
-<p>قیمت: 1800 روپے</p>
-</div>
-</div>
-
-<div class="menu-item">
-<img src="https://via.placeholder.com/120x80">
-<div>
-<h3>پیپرونی پیزا</h3>
-<p>قیمت: 2200 روپے</p>
+<h3>Margherita Pizza</h3>
+<p>Price: 1800 PKR</p>
 </div>
 </div>
 
 <div class="menu-item">
-<img src="https://via.placeholder.com/120x80">
+<img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="Pepperoni Pizza">
 <div>
-<h3>ویجی پیزا</h3>
-<p>قیمت: 2000 روپے</p>
+<h3>Pepperoni Pizza</h3>
+<p>Price: 2200 PKR</p>
 </div>
 </div>
+
+<div class="menu-item">
+<img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="Veggie Pizza">
+<div>
+<h3>Veggie Pizza</h3>
+<p>Price: 2000 PKR</p>
+</div>
+</div>
+
+<!-- Fast Food Menu -->
+<div class="menu-item">
+<img src="https://images.pexels.com/photos/1639567/pexels-photo-1639567.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="Burger">
+<div>
+<h3>Burger</h3>
+<p>Price: 800 PKR</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="https://images.pexels.com/photos/1580464/pexels-photo-1580464.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="French Fries">
+<div>
+<h3>French Fries</h3>
+<p>Price: 400 PKR</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="https://images.pexels.com/photos/1639566/pexels-photo-1639566.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="Sandwich">
+<div>
+<h3>Sandwich</h3>
+<p>Price: 600 PKR</p>
+</div>
+</div>
+
 </section>
 
 <section id="order">
-<h2>📝 آرڈر فارم</h2>
+<h2>📝 Order Form</h2>
 
 <form onsubmit="sendWhatsApp(); return false;">
-<input type="text" id="name" placeholder="آپ کا نام" required>
-<input type="text" id="address" placeholder="مکمل پتہ" required>
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="address" placeholder="Full Address" required>
 
 <select id="pizza">
-<option>مارگریٹا پیزا</option>
-<option>پیپرونی پیزا</option>
-<option>ویجی پیزا</option>
+<option>Margherita Pizza</option>
+<option>Pepperoni Pizza</option>
+<option>Veggie Pizza</option>
+<option>Burger</option>
+<option>French Fries</option>
+<option>Sandwich</option>
 </select>
 
-<input type="number" id="qty" placeholder="تعداد" required>
+<input type="number" id="qty" placeholder="Quantity" required>
 
 <button class="order-btn" type="submit">
-🟢 WhatsApp پر آرڈر کریں
+🟢 Order on WhatsApp
 </button>
 </form>
 </section>
 
 <section id="contact">
-<h2>📞 رابطہ</h2>
-<p>فون: 0324-4991725</p>
+<h2>📞 Contact Us</h2>
+<p>Phone: 0324-4991725</p>
 <p>WhatsApp: 0324-4991725</p>
-<p>اوقات: صبح 11 بجے تا رات 10 بجے</p>
+<p>Hours: 11:00 AM – 10:00 PM</p>
 </section>
 
 <footer>
-<p>© 2026 میرا پیزا شاپ</p>
-<p>مالک: Muneeb-UR-Rehman</p>
+<p>© 2026 My Pizza & Fast Food Shop</p>
+<p>Owner: Muneeb-UR-Rehman</p>
 </footer>
 
 <script>
@@ -159,11 +187,11 @@ function sendWhatsApp() {
     var qty = document.getElementById("qty").value;
 
     var message = 
-        "🍕 Pizza Order\n\n" +
-        "نام: " + name + "\n" +
-        "پیزا: " + pizza + "\n" +
-        "تعداد: " + qty + "\n" +
-        "پتہ: " + address;
+        "🍕 Food Order\n\n" +
+        "Name: " + name + "\n" +
+        "Item: " + pizza + "\n" +
+        "Quantity: " + qty + "\n" +
+        "Address: " + address;
 
     var url = "https://wa.me/923244991725?text=" + encodeURIComponent(message);
     window.open(url, "_blank");
@@ -172,3 +200,4 @@ function sendWhatsApp() {
 
 </body>
 </html>
+
