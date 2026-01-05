@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>میرا پیزا شاپ</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:#f4f4f4;
+    direction: rtl;
+}
+header {
+    background:#ff4500;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+nav {
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
+nav a {
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
+section {
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+.menu-item {
+    display:flex;
+    margin-bottom:15px;
+}
+.menu-item img {
+    width:120px;
+    height:80px;
+    margin-left:15px;
+}
+button, input, select {
+    padding:10px;
+    width:100%;
+    margin:8px 0;
+}
+.order-btn {
+    background:#25D366;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+}
+.call-btn {
+    background:#ff4500;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    display:inline-block;
+    margin-top:10px;
+}
+footer {
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🍕 میرا پیزا شاپ</h1>
+<p>مالک: <strong>Muneeb-UR-Rehman</strong></p>
+<p>
+📞 <a href="tel:03244991725" style="color:white;">0324-4991725</a>
+</p>
+
+<a class="call-btn" href="tel:03244991725">📞 کال کر کے آرڈر کریں</a>
+</header>
+
+<nav>
+<a href="#menu">مینو</a>
+<a href="#order">آرڈر کریں</a>
+<a href="#contact">رابطہ</a>
+</nav>
+
+<section id="menu">
+<h2>📋 ہمارا مینو</h2>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/120x80">
+<div>
+<h3>مارگریٹا پیزا</h3>
+<p>قیمت: 1800 روپے</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/120x80">
+<div>
+<h3>پیپرونی پیزا</h3>
+<p>قیمت: 2200 روپے</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/120x80">
+<div>
+<h3>ویجی پیزا</h3>
+<p>قیمت: 2000 روپے</p>
+</div>
+</div>
+</section>
+
+<section id="order">
+<h2>📝 آرڈر فارم</h2>
+
+<form onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="name" placeholder="آپ کا نام" required>
+<input type="text" id="address" placeholder="مکمل پتہ" required>
+
+<select id="pizza">
+<option>مارگریٹا پیزا</option>
+<option>پیپرونی پیزا</option>
+<option>ویجی پیزا</option>
+</select>
+
+<input type="number" id="qty" placeholder="تعداد" required>
+
+<button class="order-btn" type="submit">
+🟢 WhatsApp پر آرڈر کریں
+</button>
+</form>
+</section>
+
+<section id="contact">
+<h2>📞 رابطہ</h2>
+<p>فون: 0324-4991725</p>
+<p>WhatsApp: 0324-4991725</p>
+<p>اوقات: صبح 11 بجے تا رات 10 بجے</p>
+</section>
+
+<footer>
+<p>© 2026 میرا پیزا شاپ</p>
+<p>مالک: Muneeb-UR-Rehman</p>
+</footer>
+
+<script>
+function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var address = document.getElementById("address").value;
+    var pizza = document.getElementById("pizza").value;
+    var qty = document.getElementById("qty").value;
+
+    var message = 
+        "🍕 Pizza Order\n\n" +
+        "نام: " + name + "\n" +
+        "پیزا: " + pizza + "\n" +
+        "تعداد: " + qty + "\n" +
+        "پتہ: " + address;
+
+    var url = "https://wa.me/923244991725?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
